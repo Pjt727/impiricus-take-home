@@ -22,3 +22,8 @@ build/
 # next.js specific
 .next
 
+# code editor
+.nvim.lua
+
+# sql stratchpad(s)
+*.sql
