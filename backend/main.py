@@ -1,6 +1,10 @@
-def main():
-    print("Hello from backend!")
+#####
+# Collect routes and run the FastAPI server
+#####
 
+from fastapi import FastAPI
+from routers import classify, search
 
-if __name__ == "__main__":
-    main()
+app = FastAPI()
+
+app.include_router(search.router)
