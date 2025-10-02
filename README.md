@@ -14,6 +14,7 @@ Minimal fullstack app providing an interface to physician messages.
 - SQLAlchemy (ORM) - interface with database
 - pytest - testing HTTP framework
 ### dev
+- `uv run -m db.manage migrate && uv run -m db.manage load` create database with initial data
 - autoformatting (default options) done with [ruff](https://docs.astral.sh/ruff/formatter/)
 
 
