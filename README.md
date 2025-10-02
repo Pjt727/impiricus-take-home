@@ -16,8 +16,9 @@ Minimal fullstack app providing an interface to physician messages.
 ### dev
 - `uv run -m db.manage migrate && uv run -m db.manage load` create database with initial data
     - uses `DB_URL` env variable which is set to "sqlite:///impiricus.db" by default
-- `uv run uvicorn main:app --reload`
+- `uv run uvicorn main:app --reload` run the backend with live watch
     - can navigate to /docs for interactive swagger docs
+- `DB_URL="sqlite:///:memory:" uv run pytest` (bash/zsh) run the pytest suite
 - autoformatting (default options) done with [ruff](https://docs.astral.sh/ruff/formatter/)
 
 
