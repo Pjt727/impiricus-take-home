@@ -1,4 +1,4 @@
-import { Physician, Message, ClassifyMessageResponse } from './types';
+import type { Physician, Message, ClassifyMessageResponse } from './types';
 
 const API_BASE_URL = 'http://localhost:8000';
 
@@ -26,7 +26,7 @@ export async function getMessages(
         params.append('physician_id', physicianId.toString());
     }
     if (startDate) {
-        params.append('start_date', startDate.toISOString().split('T')[0]);
+        params.append('start_date', (<string>startDate.toISOString().split('T')[0]));
     }
 
     // for simplicity the frontend works in date's instead of datetime
@@ -34,7 +34,7 @@ export async function getMessages(
     if (endDate) {
         const end = new Date(endDate);
         end.setDate(end.getDate() + 1);
-        params.append('end_date', end.toISOString().split('T')[0])
+        params.append('end_date', (<string>end.toISOString().split('T')[0]));
     };
     const response = await fetch(`${API_BASE_URL}/messages?${params.toString()}`);
     if (!response.ok) {

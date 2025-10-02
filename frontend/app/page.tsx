@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Physician } from "../lib/types";
+import type { Physician } from "../lib/types";
 import styles from "./page.module.css";
 import PhysicianSearch from "../components/PhysicianSearch";
 import MessageSearch from "../components/MessageSearch";

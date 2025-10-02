@@ -3,6 +3,18 @@ Minimal fullstack app providing an interface to physician messages.
 ## Data
 ![db-diagram](assets/db-diagram.png)
 ## Running
+- Frontend/ Backend each have their own own DockerFile
+### Docker compose
+- Run the `docker-compose.yml` which will orchestrate both the frontend and backend ports 3000 and 8000 need to be open
+    - `docker-compose up`
+### Docker
+- Running Backend example (CWD backend):
+    - `docker build -t impiricus-backend .`
+    - `docker run -p 8000:8000 impiricus-backend:latest`
+- Running Frontend example (CWD frontend):
+    - `docker build -t impiricus-frontend .`
+    - `docker run -p 3000:3000 impiricus-frontend:latest`
+
 ## Frontend
 - TypeScript
 - Next.js with react (compiled with bun)
