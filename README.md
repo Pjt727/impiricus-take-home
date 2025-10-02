@@ -23,6 +23,7 @@ Minimal fullstack app providing an interface to physician messages.
 - autoformatting (default options) done with [TypeScript Language Server](https://github.com/typescript-language-server/typescript-language-server)
 ## Backend
 - Python
+- Pydantic - data validation
 - FastAPI - backend framework
 - SQLite - file based database
 - SQLAlchemy (ORM) - interface with database
