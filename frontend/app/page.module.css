@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.controls input[type="text"],
+.controls input[type="date"],
+.controls select {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.controls input[type="text"]:focus,
+.controls input[type="date"]:focus,
+.controls select:focus {
+  outline: none;
+  border-color: #0070f3;
+  box-shadow: 0 0 0 3px rgba(0, 112, 243, 0.2);
+}
+
+
+.physicianSearch {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.physicianSearch h2 {
+  margin-top: 0;
+}
+
+.physicianList {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  max-height: 300px;
+  min-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.physicianList li {
+  padding: 0.75rem;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.physicianList li:last-child {
+  border-bottom: none;
+}
+
+.physicianList li:hover {
+  background-color: #f0f0f0;
+}
+
+.selectedPhysician {
+  background-color: #e0eafc !important;
+  font-weight: bold;
+}
+
+.messageView {
+  margin-top: 2rem;
+  min-height: 750px;
+}
+
+.searchResultsInfo {
+  padding: .2rem;
+  background-color: #f0f8ff;
+  border: 1px solid #d1e7fd;
+  border-radius: 8px;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2rem 0;
+}
+

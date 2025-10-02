@@ -7,6 +7,8 @@ Minimal fullstack app providing an interface to physician messages.
 - TypeScript
 - Next.js with react (compiled with bun)
 ### dev
+- `bun dev` 
+- autoformatting (default options) done with [TypeScript Language Server](https://github.com/typescript-language-server/typescript-language-server)
 ## Backend
 - Python
 - FastAPI - backend framework
